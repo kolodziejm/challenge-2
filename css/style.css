@@ -9,4 +9,25 @@ html {
   font-size: 62.5%; }
 
 body {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  line-height: 27px;
+  color: #262626;
   box-sizing: border-box; }
+
+.nav__brand {
+  font-family: 'Pacifico', sans-serif;
+  color: #262626;
+  font-size: 5rem;
+  font-weight: 400;
+  text-decoration: none; }
+
+.hero {
+  background-image: url("../../assets/images/header.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh; }
+
+.main {
+  height: 1000px; }
