@@ -1,18 +1,15 @@
 .hero {
   background-image: url('../../assets/images/header.png');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  @include imageBackground;
   height: 100vh;
 }
 
 .subscribe {
   background-image: url('../../assets/images/subscribe.png');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  @include imageBackground;
 }
 
 .contact {
   background-image: url('../../assets/images/contact.png');
+  @include imageBackground;
 }

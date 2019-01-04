@@ -36,4 +36,7 @@ body {
   background-size: cover; }
 
 .contact {
-  background-image: url("../../assets/images/contact.png"); }
+  background-image: url("../../assets/images/contact.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
