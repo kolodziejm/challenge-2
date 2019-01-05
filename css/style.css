@@ -11,7 +11,6 @@ html {
 body {
   font-family: 'Raleway', sans-serif;
   font-weight: 300;
-  line-height: 2.7rem;
   color: #262626;
   box-sizing: border-box;
   overflow-x: hidden; }
@@ -21,6 +20,28 @@ body {
   font-size: 1.7rem;
   font-weight: 300;
   line-height: 2.7rem; }
+  .paragraph--hero {
+    font-weight: 500; }
+  .paragraph--white {
+    color: #fff; }
+
+.section-title {
+  font-size: 5rem;
+  font-weight: 700; }
+  @media only screen and (min-width: 56.25em) {
+    .section-title {
+      font-size: 7rem; } }
+  @media only screen and (min-width: 75em) {
+    .section-title {
+      font-size: 9rem; } }
+  .section-title--white {
+    color: #fff; }
+
+.u-mb-xs {
+  margin-bottom: 1rem; }
+
+.u-mb-sm {
+  margin-bottom: 2rem; }
 
 .u-mb-md {
   margin-bottom: 3.1rem; }
@@ -48,7 +69,7 @@ body {
 .nav {
   position: fixed;
   width: 100%;
-  padding-top: 5rem;
+  padding-top: 3rem;
   z-index: 1000;
   transition: all ease-in-out .2s; }
   .nav__container {
@@ -58,7 +79,7 @@ body {
     justify-content: space-between;
     align-items: center; }
   .nav--scrolled {
-    background-color: #b9b9b9;
+    background-color: #fff;
     padding-top: 2rem;
     padding-bottom: 1rem; }
     .nav--scrolled .nav__brand {
@@ -75,8 +96,9 @@ body {
     display: flex;
     align-items: center; }
   .nav__item {
-    margin-right: 4rem;
-    padding-top: .2rem; }
+    padding-top: .9rem; }
+    .nav__item:not(:last-child) {
+      margin-right: 4rem; }
     .nav__item--active {
       border-top: 3px #ff6033 solid; }
   .nav__link {
@@ -89,12 +111,13 @@ body {
 
 .hero {
   background-image: url("../../assets/images/header.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
   background-position: top;
+  background-repeat: no-repeat;
   height: 100vh;
   position: relative; }
+  @media only screen and (min-width: 78.75em) {
+    .hero {
+      background-size: cover; } }
   .hero__text-box {
     max-width: 40rem;
     position: absolute;
@@ -109,6 +132,43 @@ body {
     bottom: 7rem;
     left: 50%;
     transform: translateX(-50%); }
+
+.about {
+  background-color: #00c4c4;
+  padding: 6rem 0; }
+  .about__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    @media only screen and (min-width: 56.25em) {
+      .about__container {
+        flex-direction: row;
+        justify-content: space-between; } }
+  .about__text-box {
+    padding: 0 2rem;
+    height: 100%; }
+    @media only screen and (min-width: 56.25em) {
+      .about__text-box {
+        width: 875px; } }
+    @media only screen and (min-width: 75em) {
+      .about__text-box {
+        padding: 0; } }
+  .about__image {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%; }
+    .about__image-box {
+      width: 100%;
+      max-width: 400px; }
+      @media only screen and (min-width: 37.5em) {
+        .about__image-box {
+          max-width: 600px; } }
+      @media only screen and (min-width: 56.25em) {
+        .about__image-box {
+          max-width: 100%;
+          margin-right: 7rem; } }
 
 .subscribe {
   background-image: url("../../assets/images/subscribe.png");

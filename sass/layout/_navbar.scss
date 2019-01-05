@@ -1,7 +1,7 @@
 .nav {
   position: fixed;
   width: 100%;
-  padding-top: 5rem;
+  padding-top: 3rem;
   z-index: 1000;
   transition: all ease-in-out .2s;
 
@@ -14,7 +14,7 @@
   }
 
   &--scrolled {
-    background-color: $color-grey-light;
+    background-color: $color-white;
     padding-top: 2rem;
     padding-bottom: 1rem;
 
@@ -39,8 +39,11 @@
   }
 
   &__item {
-    margin-right: 4rem;
-    padding-top: .2rem;
+
+    &:not(:last-child) {
+      margin-right: 4rem;
+    }
+    padding-top: .9rem;
 
     &--active {
       border-top: 3px $color-orange solid;
