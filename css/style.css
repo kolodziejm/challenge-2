@@ -11,23 +11,104 @@ html {
 body {
   font-family: 'Raleway', sans-serif;
   font-weight: 300;
-  line-height: 27px;
+  line-height: 2.7rem;
   color: #262626;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  overflow-x: hidden; }
 
-.nav__brand {
-  font-family: 'Pacifico', sans-serif;
+.paragraph {
   color: #262626;
-  font-size: 5rem;
-  font-weight: 400;
-  text-decoration: none; }
+  font-size: 1.7rem;
+  font-weight: 300;
+  line-height: 2.7rem; }
+
+.u-mb-md {
+  margin-bottom: 3.1rem; }
+
+.u-mt-md {
+  margin-top: 3.5rem; }
+
+.btn {
+  display: inline-block;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
+  font-family: inherit;
+  font-size: 2rem;
+  font-weight: 300;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 1.6rem 2rem; }
+  .btn--orange {
+    color: #fff;
+    background-color: #ff6033; }
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto; }
+
+.nav {
+  position: fixed;
+  width: 100%;
+  padding-top: 5rem;
+  z-index: 1000;
+  transition: all ease-in-out .2s; }
+  .nav__container {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .nav--scrolled {
+    background-color: #b9b9b9;
+    padding-top: 2rem;
+    padding-bottom: 1rem; }
+    .nav--scrolled .nav__brand {
+      font-size: 3.5rem; }
+  .nav__brand {
+    font-family: 'Pacifico', sans-serif;
+    color: #262626;
+    font-size: 5rem;
+    font-weight: 400;
+    text-decoration: none;
+    transition: all ease-in-out .2s; }
+  .nav__list {
+    list-style: none;
+    display: flex;
+    align-items: center; }
+  .nav__item {
+    margin-right: 4rem;
+    padding-top: .2rem; }
+    .nav__item--active {
+      border-top: 3px #ff6033 solid; }
+  .nav__link {
+    font-family: inherit;
+    color: #262626;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 1.6rem;
+    text-transform: uppercase; }
 
 .hero {
   background-image: url("../../assets/images/header.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 100vh; }
+  background-position: top;
+  height: 100vh;
+  position: relative; }
+  .hero__text-box {
+    max-width: 40rem;
+    position: absolute;
+    top: 40%; }
+  .hero__title {
+    color: #262626;
+    font-size: 6rem;
+    font-weight: 800; }
+  .hero .mouse {
+    display: block;
+    position: absolute;
+    bottom: 7rem;
+    left: 50%;
+    transform: translateX(-50%); }
 
 .subscribe {
   background-image: url("../../assets/images/subscribe.png");

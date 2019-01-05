@@ -1,0 +1,15 @@
+.btn {
+  display: inline-block;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
+  font-family: inherit;
+  font-size: 2rem;
+  font-weight: 300;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 1.6rem 2rem;
+
+  &--orange {
+    color: $color-white;
+    background-color: $color-orange;
+  }
+}

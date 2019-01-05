@@ -8,12 +8,14 @@
 
 html {
   font-size: 62.5%;
+  // 62.5% at desktop (10px), 9px (56%~) tablet, 8px (50%) mobile
 }
 
 body {
   font-family: 'Raleway', sans-serif;
   font-weight: 300;
-  line-height: 27px;
+  line-height: 2.7rem;
   color: $color-black;
   box-sizing: border-box;
+  overflow-x: hidden; 
 }

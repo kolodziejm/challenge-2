@@ -1,7 +1,29 @@
 .hero {
   background-image: url('../../assets/images/header.png');
   @include imageBackground;
+  background-position: top;
   height: 100vh;
+  position: relative;
+
+  &__text-box {
+    max-width: 40rem;
+    position: absolute;
+    top: 40%;
+  }
+
+  &__title {
+    color: $color-black;
+    font-size: 6rem;
+    font-weight: 800;
+  }
+
+  .mouse {
+    display: block;
+    position: absolute;
+    bottom: 7rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 
 .subscribe {

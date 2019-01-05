@@ -1,0 +1,58 @@
+.nav {
+  position: fixed;
+  width: 100%;
+  padding-top: 5rem;
+  z-index: 1000;
+  transition: all ease-in-out .2s;
+
+  &__container {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &--scrolled {
+    background-color: $color-grey-light;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+
+    .nav__brand {
+      font-size: 3.5rem;
+    }
+  }
+
+  &__brand {
+    font-family: 'Pacifico', sans-serif;
+    color: $color-black;
+    font-size: 5rem;
+    font-weight: 400;
+    text-decoration: none;
+    transition: all ease-in-out .2s;
+  }
+
+  &__list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+  }
+
+  &__item {
+    margin-right: 4rem;
+    padding-top: .2rem;
+
+    &--active {
+      border-top: 3px $color-orange solid;
+    }
+  }
+
+  &__link {
+    font-family: inherit;
+    color: $color-black;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+  }
+}

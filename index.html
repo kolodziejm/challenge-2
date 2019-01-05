@@ -14,41 +14,43 @@
 <body>
   <header class="hero">
     <nav class="nav">
-      <a href="#" class="nav__brand">Cahee</a>
-      <ul class="nav__list">
-        <li class="nav__item">
-          <a href="#" class="nav__link">Home</a>
-        </li>
-        <li class="nav__item">
-          <a href="#" class="nav__link">About</a>
-        </li>
-        <li class="nav__item">
-          <a href="#" class="nav__link">Services</a>
-        </li>
-        <li class="nav__item">
-          <a href="#" class="nav__link">Gallery</a>
-        </li>
-        <li class="nav__item">
-          <a href="#" class="nav__link">Blog</a>
-        </li>
-        <li class="nav__item">
-          <a href="#" class="nav__link">Contact</a>
-        </li>
-      </ul>
+      <div class="nav__container">
+        <a href="#" class="nav__brand">Cahee</a>
+        <ul class="nav__list">
+          <li class="nav__item nav__item--active">
+            <a href="#" class="nav__link">Home</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">About</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Services</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Gallery</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Blog</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Contact</a>
+          </li>
+        </ul>
+      </div>
     </nav>
+    <div class="container container--hero">
+      <div class="hero__text-box">
+        <h1 class="hero__title">Fresh Life</h1>
+        <p class="paragraph u-mb-md u-mt-md">
+          Sed do eiusmode tempor incidudnt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+          exarcitation ullamco.
+        </p>
+        <a href="#" class="btn btn--orange">Get free now</a>
+      </div>
 
-    <div class="hero__text-box">
-      <h1 class="hero__title">
-        Fresh Life
-      </h1>
-      <p class="paragraph">
-        Sed do eiusmode tempor incidudnt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-        exarcitation ullamco.
-      </p>
-      <a href="#" class="btn btn--orange">Get free now</a>
+      <img class="mouse" src="/assets/icons//scroll.png" alt="Scroll down">
     </div>
-
-    <img class="mouse" src="/assets/icons//scroll.png" alt="Scroll down">
+    </div>
   </header>
   <main class="main">
 
@@ -158,12 +160,12 @@
             Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
             aliqua. Ut enim ad minim veniam.
           </p>
-          <div class="subscribe__email-box">
+          <form class="subscribe__form">
             <div class="subscribe__input-wrapper">
               <input type="email" name="email" id="email" class="subscribe__input" placeholder="Your email address...">
             </div>
             <input type="submit" value="Subscribe" class="btn btn--green">
-          </div>
+          </form>
         </div>
       </div>
     </section>
@@ -218,7 +220,7 @@
         <p class="paragraph paragraph--black">
           For new projects, ideas, business or anything you'd like to discuss, contact with me!
         </p>
-        <div class="contact__input-group">
+        <form class="contact__form">
           <div class="contact__input-wrapper">
             <input type="text" name="name" id="name" class="contact__input">
           </div>
@@ -231,7 +233,7 @@
           <div class="contact__input-wrapper">
             <textarea class="contact__textarea"></textarea>
           </div>
-        </div>
+        </form>
         <div class="contact__details">
           <h5 class="contact__subtitle">Address</h5>
           <p class="paragraph--big paragraph--black">
