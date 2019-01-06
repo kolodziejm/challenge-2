@@ -7,8 +7,19 @@
 }
 
 html {
-  font-size: 62.5%;
-  // 62.5% at desktop (10px), 9px (56%~) tablet, 8px (50%) mobile
+  font-size: 50%; // 8px
+
+  @media only screen and (min-width: 37.5em) { // 600px
+    font-size: 56%;
+  } 
+
+  @media only screen and (min-width: 56.25em) { // 900px
+    font-size: 59%;
+  }
+
+  @media only screen and (min-width: 75em) { // 1200px
+    font-size: 62.5%; // 10px
+  }
 }
 
 body {
