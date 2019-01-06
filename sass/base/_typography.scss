@@ -1,7 +1,7 @@
 .paragraph {
   color: $color-black;
   font-size: 1.7rem;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 2.7rem;
 
   &--hero {
@@ -9,6 +9,7 @@
   }
 
   &--white {
+    font-weight: 300;
     color: $color-white;
   }
 }

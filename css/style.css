@@ -27,11 +27,12 @@ body {
 .paragraph {
   color: #262626;
   font-size: 1.7rem;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 2.7rem; }
   .paragraph--hero {
     font-weight: 500; }
   .paragraph--white {
+    font-weight: 300;
     color: #fff; }
 
 .section-title {
@@ -57,6 +58,9 @@ body {
 
 .u-mt-md {
   margin-top: 3.5rem; }
+
+.centered {
+  text-align: center; }
 
 .btn {
   display: inline-block;
@@ -126,7 +130,7 @@ body {
   background-position: top;
   height: 100vh;
   position: relative; }
-  @media only screen and (min-width: 78.75em) {
+  @media only screen and (min-width: 80em) {
     .hero {
       background-position: 0% 35%;
       background-size: cover; } }
@@ -243,6 +247,66 @@ body {
   .services__title {
     text-align: center;
     width: 100%; }
+
+.gallery {
+  background-color: #ffe92f; }
+  @media only screen and (min-width: 75em) {
+    .gallery {
+      padding: 8rem 0 10rem 0; } }
+  .gallery__text-box {
+    max-width: 570px;
+    margin: 0 auto; }
+  .gallery__grid {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    max-width: 60rem;
+    margin: 0 auto; }
+    @media only screen and (min-width: 75em) {
+      .gallery__grid {
+        margin-top: 5rem;
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 260px 260px 400px;
+        justify-content: end;
+        grid-row-gap: 2rem;
+        grid-column-gap: 0rem; } }
+  @media only screen and (min-width: 75em) {
+    .gallery__item {
+      width: auto; } }
+  @media only screen and (min-width: 75em) {
+    .gallery__item--1 {
+      grid-column: 1 / 3;
+      grid-row: 1 / 3;
+      justify-self: start;
+      height: 550px; } }
+  @media only screen and (min-width: 75em) {
+    .gallery__item--2 {
+      grid-column: 4 / -1;
+      grid-row: 1 / 2;
+      justify-self: self-end; } }
+  @media only screen and (min-width: 75em) {
+    .gallery__item--3 {
+      grid-column: 4 / -1;
+      grid-row: 2 / 3;
+      justify-self: self-end; } }
+  @media only screen and (min-width: 75em) {
+    .gallery__item--4 {
+      grid-column: 1 / 3;
+      grid-row: 3; } }
+  @media only screen and (min-width: 75em) {
+    .gallery__item--5 {
+      grid-column: 3 / 5;
+      grid-row: 3;
+      justify-self: self-end; } }
+  .gallery__image {
+    width: 100%;
+    display: block; }
+    @media only screen and (min-width: 75em) {
+      .gallery__image {
+        width: auto;
+        height: 100%; } }
 
 .subscribe {
   background-image: url("../../assets/images/subscribe.png");
