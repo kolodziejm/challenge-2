@@ -1,8 +1,9 @@
 .hero {
   background-image: url('../../assets/images/header.png');
-  background-position: top;
   background-repeat: no-repeat;
+  background-position: top;
   @media only screen and (min-width: 78.75em) {
+    background-position: 0% 35%;
     background-size: cover;
   }
   height: 100vh;
@@ -11,19 +12,19 @@
   &__text-box {
     max-width: 40rem;
     position: absolute;
-    top: 40%;
+    top: 35%;
   }
 
   &__title {
     color: $color-black;
     font-size: 6rem;
-    font-weight: 800;
+    font-weight: 900;
   }
 
   .mouse {
     display: block;
     position: absolute;
-    bottom: 7rem;
+    bottom: 4.5rem;
     left: 50%;
     transform: translateX(-50%);
   }
@@ -33,7 +34,7 @@
 
 .about {
   background-color: $color-turquoise;
-  padding: 6rem 0;
+  padding: 5rem 0;
 
   &__container {
     display: flex;
@@ -63,8 +64,8 @@
   &__image {
     display: block;
     margin: 0 auto;
-    width: 100%;
     height: 100%;
+    width: 100%;
 
     &-box {
       width: 100%;
@@ -81,6 +82,8 @@
     }
   }
 }
+
+// SERVICES ------------------------------------------------------------------------------------
 
 
 .subscribe {

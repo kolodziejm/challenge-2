@@ -57,7 +57,7 @@ body {
   font-weight: 300;
   text-decoration: none;
   text-transform: uppercase;
-  padding: 1.6rem 2rem; }
+  padding: 1.5rem 2.5rem; }
   .btn--orange {
     color: #fff;
     background-color: #ff6033; }
@@ -96,11 +96,12 @@ body {
     display: flex;
     align-items: center; }
   .nav__item {
-    padding-top: .9rem; }
+    padding-top: .6rem; }
     .nav__item:not(:last-child) {
-      margin-right: 4rem; }
+      margin-right: 3.75rem; }
     .nav__item--active {
-      border-top: 3px #ff6033 solid; }
+      border-top: 3px #ff6033 solid;
+      margin-bottom: 3px; }
   .nav__link {
     font-family: inherit;
     color: #262626;
@@ -111,31 +112,32 @@ body {
 
 .hero {
   background-image: url("../../assets/images/header.png");
-  background-position: top;
   background-repeat: no-repeat;
+  background-position: top;
   height: 100vh;
   position: relative; }
   @media only screen and (min-width: 78.75em) {
     .hero {
+      background-position: 0% 35%;
       background-size: cover; } }
   .hero__text-box {
     max-width: 40rem;
     position: absolute;
-    top: 40%; }
+    top: 35%; }
   .hero__title {
     color: #262626;
     font-size: 6rem;
-    font-weight: 800; }
+    font-weight: 900; }
   .hero .mouse {
     display: block;
     position: absolute;
-    bottom: 7rem;
+    bottom: 4.5rem;
     left: 50%;
     transform: translateX(-50%); }
 
 .about {
   background-color: #00c4c4;
-  padding: 6rem 0; }
+  padding: 5rem 0; }
   .about__container {
     display: flex;
     flex-direction: column;
@@ -157,8 +159,8 @@ body {
   .about__image {
     display: block;
     margin: 0 auto;
-    width: 100%;
-    height: 100%; }
+    height: 100%;
+    width: 100%; }
     .about__image-box {
       width: 100%;
       max-width: 400px; }

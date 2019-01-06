@@ -41,12 +41,13 @@
   &__item {
 
     &:not(:last-child) {
-      margin-right: 4rem;
+      margin-right: 3.75rem;
     }
-    padding-top: .9rem;
+    padding-top: .6rem;
 
     &--active {
       border-top: 3px $color-orange solid;
+      margin-bottom: 3px;
     }
   }
 
