@@ -13,4 +13,13 @@
     color: $color-white;
     background-color: $color-orange;
   }
+
+  &--blue {
+    color: $color-white;
+    background-color: $color-blue-dark-2;
+  }
+
+  &--big {
+    padding: 1.5rem 4rem;
+  }
 }
