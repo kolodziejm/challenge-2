@@ -332,7 +332,6 @@ body {
           height: 400px; } }
   .gallery__image {
     width: 100%;
-    height: 100%;
     display: block; }
 
 .subscribe {
@@ -417,6 +416,8 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
     margin-bottom: 2rem; }
     @media only screen and (min-width: 75em) {
       .blog__card {
@@ -436,10 +437,18 @@ body {
       left: 30px; }
     .blog__card--one {
       background-image: linear-gradient(to top, #000, rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0)), url("../../assets/images/blog 1 bg.png"); }
+    .blog__card--one:hover {
+      background-image: linear-gradient(to top, #000, rgba(0, 0, 0, 0.1) 100%, rgba(0, 0, 0, 0)), url("../../assets/images/blog 1 bg.png"); }
     .blog__card--two {
       background-image: linear-gradient(to top, #000, rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0)), url("../../assets/images/blog 2 bg.png"); }
+    .blog__card--two:hover {
+      background-image: linear-gradient(to top, #000, rgba(0, 0, 0, 0.1) 100%, rgba(0, 0, 0, 0)), url("../../assets/images/blog 2 bg.png"); }
     .blog__card--three {
       background-image: linear-gradient(to top, #000, rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0)), url("../../assets/images/blog 3 bg.png"); }
+    .blog__card--three:hover {
+      background-image: linear-gradient(to top, #000, rgba(0, 0, 0, 0.1) 100%, rgba(0, 0, 0, 0)), url("../../assets/images/blog 3 bg.png"); }
+    .blog__card--one:hover, .blog__card--two:hover, .blog__card--three:hover {
+      transform: translateY(-10px) scale(1.05); }
 
 .contact {
   background-image: url("../../assets/images/contact.png");
