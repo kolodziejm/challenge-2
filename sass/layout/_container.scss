@@ -1,6 +1,12 @@
 // Container max width - 1200px to rem;
 
 .container {
+  padding: 0 1rem 0 1rem;
+
+  @media only screen and (min-width: $desktop) {
+    padding: 0;
+  }
+
   max-width: 1170px;
   margin: 0 auto;
 }

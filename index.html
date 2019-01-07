@@ -154,32 +154,35 @@
     <section class="subscribe">
       <div class="container subscribe__container">
         <div class="subscribe__text-box">
-          <h3 class="section-title--small">
+          <h3 class="section-title--small u-mb-sm">
             Subscribe To Us
           </h3>
           <p class="paragraph paragraph--black">
             Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
             aliqua. Ut enim ad minim veniam.
           </p>
-          <form class="subscribe__form">
-            <div class="subscribe__input-wrapper">
-              <input type="email" name="email" id="email" class="subscribe__input" placeholder="Your email address...">
-            </div>
-            <input type="submit" value="Subscribe" class="btn btn--green">
-          </form>
         </div>
+        <form class="subscribe__form">
+          <div class="subscribe__input-wrapper">
+            <input type="email" name="email" id="email" class="subscribe__input" placeholder="Your email address...">
+          </div>
+          <input type="submit" value="Subscribe" class="btn btn--green btn--subscribe">
+        </form>
       </div>
     </section>
 
     <section class="blog">
       <div class="container container--blog">
-        <h2 class="section-title section-title--white centered">
-          Blog
-        </h2>
-        <p class="paragraph paragraph--white">
-          Dolore magna aliqu. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-          commodo consequato. Duis aute irure dolor in reprehenderit in voluptate velit.
-        </p>
+        <div class="blog__text-box">
+          <h2 class="section-title section-title--white centered u-mb-sm">
+            Blog
+          </h2>
+          <p class="paragraph paragraph--white centered">
+            Dolore magna aliqu. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea
+            commodo consequato. Duis aute irure dolor in reprehenderit in voluptate velit.
+          </p>
+        </div>
         <ul class="blog__cards">
           <li class="blog__card blog__card--one">
             <img src="assets/images/blog 1 date.png" alt="20th November" class="blog__card__date">
@@ -209,7 +212,9 @@
             </p>
           </li>
         </ul>
-        <a href="#" class="btn btn--red">View more</a>
+        <div class="u-center-container">
+          <a href="#" class="btn btn--red btn--blog">View more</a>
+        </div>
       </div>
     </section>
 

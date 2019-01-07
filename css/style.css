@@ -46,6 +46,11 @@ body {
       font-size: 9rem; } }
   .section-title--white {
     color: #fff; }
+  .section-title--small {
+    font-size: 3rem; }
+    @media only screen and (min-width: 56.25em) {
+      .section-title--small {
+        font-size: 4rem; } }
 
 .u-mb-xs {
   margin-bottom: 1rem; }
@@ -75,19 +80,34 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   padding: 1.5rem 2.5rem;
-  border: 0; }
+  border: 0;
+  cursor: pointer; }
   .btn--orange {
     color: #fff;
     background-color: #ff6033; }
   .btn--blue {
     color: #fff;
     background-color: #5585a2; }
+  .btn--green {
+    color: #fff;
+    background-color: #96b92c; }
+  .btn--red {
+    color: #fff;
+    background-color: #f72b3b; }
   .btn--big {
+    padding: 1.5rem 4rem; }
+  .btn--subscribe {
+    padding: 1.5rem 3rem; }
+  .btn--blog {
     padding: 1.5rem 4rem; }
 
 .container {
+  padding: 0 1rem 0 1rem;
   max-width: 1170px;
   margin: 0 auto; }
+  @media only screen and (min-width: 75em) {
+    .container {
+      padding: 0; } }
 
 .nav {
   position: fixed;
@@ -319,7 +339,107 @@ body {
   background-image: url("../../assets/images/subscribe.png");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover; }
+  background-size: cover;
+  padding: 5rem 0 5rem 0; }
+  @media only screen and (min-width: 75em) {
+    .subscribe {
+      padding: 12rem 0 16.3rem 0;
+      background-size: auto; } }
+  .subscribe__text-box {
+    max-width: 550px;
+    background-color: #fbfbf7;
+    opacity: 0.9;
+    margin: 0 auto 3rem auto; }
+    @media only screen and (min-width: 56.25em) {
+      .subscribe__text-box {
+        margin-left: 0;
+        margin-right: 0;
+        background-color: transparent;
+        opacity: 1; } }
+  .subscribe__form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto; }
+    @media only screen and (min-width: 56.25em) {
+      .subscribe__form {
+        flex-direction: row;
+        align-items: center;
+        max-width: 800px;
+        margin: 0; } }
+  .subscribe__input {
+    font-size: 1.5rem;
+    padding: 1.9rem 0 1.9rem 1.5rem;
+    width: 100%;
+    border: 1px solid #262626; }
+    @media only screen and (min-width: 56.25em) {
+      .subscribe__input {
+        width: 570px; }
+        .subscribe__input-wrapper {
+          margin-right: 3rem; } }
+    .subscribe__input::placeholder {
+      color: #9d9d9d;
+      font-family: inherit; }
+
+.blog {
+  background-color: #b07cf7;
+  padding: 2rem 0 3rem 0; }
+  @media only screen and (min-width: 75em) {
+    .blog {
+      padding: 8rem 0 12rem 0; } }
+  .blog__text-box {
+    max-width: 570px;
+    margin: 0 auto 3rem auto; }
+    @media only screen and (min-width: 37.5em) {
+      .blog__text-box {
+        margin-bottom: 4rem; } }
+  .blog__cards {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem; }
+    @media only screen and (min-width: 56.25em) {
+      .blog__cards {
+        margin-bottom: 5rem; } }
+    @media only screen and (min-width: 75em) {
+      .blog__cards {
+        flex-direction: row;
+        justify-content: space-between; } }
+  .blog__card {
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 0 2rem 2rem 2rem;
+    max-width: 370px;
+    width: 100%;
+    height: 310px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-bottom: 2rem; }
+    @media only screen and (min-width: 75em) {
+      .blog__card {
+        margin-bottom: 0; } }
+    .blog__card__title {
+      color: #fff;
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 2rem; }
+    .blog__card__details {
+      color: #fff;
+      font-size: 1.3rem;
+      font-weight: 300; }
+    .blog__card__date {
+      position: absolute;
+      top: 30px;
+      left: 30px; }
+    .blog__card--one {
+      background-image: linear-gradient(to top, #000, rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0)), url("../../assets/images/blog 1 bg.png"); }
+    .blog__card--two {
+      background-image: linear-gradient(to top, #000, rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0)), url("../../assets/images/blog 2 bg.png"); }
+    .blog__card--three {
+      background-image: linear-gradient(to top, #000, rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0)), url("../../assets/images/blog 3 bg.png"); }
 
 .contact {
   background-image: url("../../assets/images/contact.png");

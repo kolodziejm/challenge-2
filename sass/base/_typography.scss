@@ -29,4 +29,12 @@
   &--white {
     color: $color-white;
   }
+
+  &--small {
+    font-size: 3rem;
+
+    @media only screen and (min-width: 56.25em) { 
+      font-size: 4rem;
+    }
+  }
 }

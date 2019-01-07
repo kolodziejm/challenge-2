@@ -8,6 +8,7 @@
   text-transform: uppercase;
   padding: 1.5rem 2.5rem;
   border: 0;
+  cursor: pointer;
 
   &--orange {
     color: $color-white;
@@ -19,7 +20,25 @@
     background-color: $color-blue-dark-2;
   }
 
+  &--green {
+    color: $color-white;
+    background-color: $color-green;
+  }
+
+  &--red {
+    color: $color-white;
+    background-color: $color-orange-dark;
+  }
+
   &--big {
+    padding: 1.5rem 4rem;
+  }
+
+  &--subscribe {
+    padding: 1.5rem 3rem;
+  }
+
+  &--blog {
     padding: 1.5rem 4rem;
   }
 }
