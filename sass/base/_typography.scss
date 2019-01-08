@@ -12,6 +12,17 @@
     font-weight: 300;
     color: $color-white;
   }
+
+  &--grey {
+    color: $color-grey-light;
+    font-weight: 300;
+    font-size: 1.6rem;
+  }
+
+  &--big {
+    font-size: 2rem;
+    font-weight: 400;
+  }
 }
 
 .section-title {

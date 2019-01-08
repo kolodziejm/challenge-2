@@ -4,6 +4,13 @@
   padding-top: 3rem;
   z-index: 1000;
   transition: all ease-in-out .2s;
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+  @media only screen and (min-width: $desktop) {
+    padding-left: 0;
+    padding-right: 0;
+  }
 
   &__container {
     max-width: 1170px;
@@ -34,11 +41,16 @@
 
   &__list {
     list-style: none;
-    display: flex;
-    align-items: center;
+    display: none;
+
+    @media only screen and (min-width: $desktop) {
+      display: flex;
+      align-items: center;
+    }
   }
 
   &__item {
+    transition: all .2s ease-out;
 
     &:not(:last-child) {
       margin-right: 3.75rem;
@@ -58,5 +70,60 @@
     text-decoration: none;
     font-size: 1.6rem;
     text-transform: uppercase;
+  }
+
+  &__hamburger {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media only screen and (min-width: $desktop) {
+      display: none;
+    }
+
+    &__icon {
+      width: 100%;
+    }
+  }
+
+  &__mobile-list {
+    border-top: 1px solid $color-black;
+    list-style: none;
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+
+    &--active {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      opacity: 1;
+    }
+
+    @media only screen and (min-width: $desktop) {
+      display: none;
+    }
+
+    &__item {
+
+      &:first-child {
+        margin-top: 3rem;
+      }
+      
+      &:not(:last-child) {
+        margin-bottom: 5rem;
+      }
+
+      &:last-child {
+        margin-bottom: 3rem;
+      }
+    }
   }
 }

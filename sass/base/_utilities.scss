@@ -10,6 +10,10 @@
   margin-bottom: 3.1rem;
 }
 
+.u-mb-lg {
+  margin-bottom: 4rem;
+}
+
 .u-mt-md {
   margin-top: 3.5rem;
 }
@@ -21,4 +25,8 @@
 .u-center-container {
   display: flex;
   justify-content: center;
+}
+
+.pink-text {
+  color: $color-majenta;
 }

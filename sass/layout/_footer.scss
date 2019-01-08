@@ -1,0 +1,24 @@
+.footer {
+  background-color: $color-black;
+  padding: 4rem 0;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    .paragraph {
+      margin: 1rem 0;
+    }
+
+    @media only screen and (min-width: $tablet-lg) {
+      flex-direction: row;
+      justify-content: space-between;
+      text-align: left;
+
+      .paragraph {
+        margin: 0;
+      }
+    }
+  }
+}

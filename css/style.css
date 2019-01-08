@@ -34,6 +34,13 @@ body {
   .paragraph--white {
     font-weight: 300;
     color: #fff; }
+  .paragraph--grey {
+    color: #b9b9b9;
+    font-weight: 300;
+    font-size: 1.6rem; }
+  .paragraph--big {
+    font-size: 2rem;
+    font-weight: 400; }
 
 .section-title {
   font-size: 5rem;
@@ -61,6 +68,9 @@ body {
 .u-mb-md {
   margin-bottom: 3.1rem; }
 
+.u-mb-lg {
+  margin-bottom: 4rem; }
+
 .u-mt-md {
   margin-top: 3.5rem; }
 
@@ -70,6 +80,9 @@ body {
 .u-center-container {
   display: flex;
   justify-content: center; }
+
+.pink-text {
+  color: #ff2b58; }
 
 .btn {
   display: inline-block;
@@ -114,7 +127,13 @@ body {
   width: 100%;
   padding-top: 3rem;
   z-index: 1000;
-  transition: all ease-in-out .2s; }
+  transition: all ease-in-out .2s;
+  padding-left: 1rem;
+  padding-right: 1rem; }
+  @media only screen and (min-width: 75em) {
+    .nav {
+      padding-left: 0;
+      padding-right: 0; } }
   .nav__container {
     max-width: 1170px;
     margin: 0 auto;
@@ -136,9 +155,13 @@ body {
     transition: all ease-in-out .2s; }
   .nav__list {
     list-style: none;
-    display: flex;
-    align-items: center; }
+    display: none; }
+    @media only screen and (min-width: 75em) {
+      .nav__list {
+        display: flex;
+        align-items: center; } }
   .nav__item {
+    transition: all .2s ease-out;
     padding-top: .6rem; }
     .nav__item:not(:last-child) {
       margin-right: 3.75rem; }
@@ -152,6 +175,59 @@ body {
     text-decoration: none;
     font-size: 1.6rem;
     text-transform: uppercase; }
+  .nav__hamburger {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    @media only screen and (min-width: 75em) {
+      .nav__hamburger {
+        display: none; } }
+    .nav__hamburger__icon {
+      width: 100%; }
+  .nav__mobile-list {
+    border-top: 1px solid #262626;
+    list-style: none;
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0; }
+    .nav__mobile-list--active {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      opacity: 1; }
+    @media only screen and (min-width: 75em) {
+      .nav__mobile-list {
+        display: none; } }
+    .nav__mobile-list__item:first-child {
+      margin-top: 3rem; }
+    .nav__mobile-list__item:not(:last-child) {
+      margin-bottom: 5rem; }
+    .nav__mobile-list__item:last-child {
+      margin-bottom: 3rem; }
+
+.footer {
+  background-color: #262626;
+  padding: 4rem 0; }
+  .footer__container {
+    display: flex;
+    flex-direction: column;
+    text-align: center; }
+    .footer__container .paragraph {
+      margin: 1rem 0; }
+    @media only screen and (min-width: 56.25em) {
+      .footer__container {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left; }
+        .footer__container .paragraph {
+          margin: 0; } }
 
 .hero {
   background-image: url("../../assets/images/header.png");
@@ -279,13 +355,17 @@ body {
 
 .gallery {
   background-color: #ffe92f;
-  padding: 2rem 0 2rem 0; }
+  padding: 3rem 0 6rem 0;
+  position: relative; }
   @media only screen and (min-width: 75em) {
     .gallery {
       padding: 8rem 0 12rem 0; } }
   .gallery__text-box {
     max-width: 570px;
-    margin: 0 auto; }
+    margin: 0 auto 3rem auto; }
+    @media only screen and (min-width: 75em) {
+      .gallery__text-box {
+        margin: 0 auto; } }
   .gallery__grid {
     list-style-type: none;
     display: flex;
@@ -294,7 +374,7 @@ body {
     margin: 0 auto; }
     @media only screen and (min-width: 75em) {
       .gallery__grid {
-        margin-top: 5rem;
+        margin-top: 3rem;
         margin-bottom: 4.5rem;
         max-width: 100%;
         display: block; }
@@ -382,7 +462,7 @@ body {
 
 .blog {
   background-color: #b07cf7;
-  padding: 2rem 0 3rem 0; }
+  padding: 5rem 0 5rem 0; }
   @media only screen and (min-width: 75em) {
     .blog {
       padding: 8rem 0 12rem 0; } }
@@ -454,4 +534,64 @@ body {
   background-image: url("../../assets/images/contact.png");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover; }
+  background-size: cover;
+  padding: 2rem 0 3rem 0; }
+  @media only screen and (min-width: 75em) {
+    .contact {
+      padding: 8rem 0 12rem 0; } }
+  .contact__text-box {
+    max-width: 360px;
+    margin: 0 auto 4rem auto; }
+  .contact__container {
+    display: flex;
+    flex-direction: column-reverse;
+    max-width: 510px;
+    margin: 0 auto; }
+    @media only screen and (min-width: 75em) {
+      .contact__container {
+        flex-direction: row;
+        max-width: 100%;
+        margin: 0; } }
+  .contact__form {
+    width: 100%; }
+    @media only screen and (min-width: 75em) {
+      .contact__form {
+        width: 510px;
+        margin-right: 17rem; } }
+  .contact__input, .contact__textarea {
+    width: 100%;
+    padding: 1.7rem 0 1.7rem 2rem;
+    border: 0;
+    font-family: inherit;
+    font-size: 1.5rem;
+    font-weight: 700;
+    transition: all .2s ease-in-out;
+    color: #fff;
+    background-color: #00c4c4;
+    opacity: .6; }
+    .contact__input:focus, .contact__textarea:focus {
+      border-left: 5px solid #355b82;
+      background-color: #00c4c4;
+      opacity: 1; }
+    .contact__input::placeholder, .contact__textarea::placeholder {
+      font-family: inherit;
+      color: #fff;
+      font-weight: 300; }
+    .contact__input-wrapper:not(:last-child), .contact__textarea-wrapper:not(:last-child) {
+      margin-bottom: 1.5rem; }
+  .contact__textarea {
+    resize: none;
+    height: 250px; }
+  .contact__subtitle {
+    font-family: inherit;
+    color: #262626;
+    font-size: 1.7rem;
+    font-weight: 700;
+    text-transform: uppercase; }
+  .contact__details {
+    margin-bottom: 2rem; }
+    @media only screen and (min-width: 75em) {
+      .contact__details {
+        margin-bottom: 0; } }
+    .contact__details .paragraph:not(:last-child) {
+      margin-bottom: 1.2rem; }

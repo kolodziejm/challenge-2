@@ -172,7 +172,8 @@
 
 .gallery {
   background-color: $color-yellow;
-  padding: 2rem 0 2rem 0;
+  padding: 3rem 0 6rem 0;
+  position: relative;
 
   @media only screen and (min-width: 75em) {
     padding: 8rem 0 12rem 0;
@@ -184,7 +185,11 @@
 
   &__text-box {
     max-width: 570px;
-    margin: 0 auto;
+    margin: 0 auto 3rem auto;
+
+    @media only screen and (min-width: 75em) {
+      margin: 0 auto;
+    }
   }
 
   &__grid {
@@ -195,7 +200,7 @@
     margin: 0 auto;
 
     @media only screen and (min-width: 75em) {
-      margin-top: 5rem;
+      margin-top: 3rem;
       margin-bottom: 4.5rem;
       max-width: 100%;
       display: block;
@@ -316,14 +321,10 @@
 
 .blog {
   background-color: $color-violet-light;
-  padding: 2rem 0 3rem 0;
+  padding: 5rem 0 5rem 0;
 
   @media only screen and (min-width: $desktop) {
     padding: 8rem 0 12rem 0;
-  }
-
-  &__container {
-
   }
 
   &__text-box {
@@ -427,4 +428,93 @@
 .contact {
   background-image: url('../../assets/images/contact.png');
   @include imageBackground;
+  padding: 2rem 0 3rem 0;
+
+  @media only screen and (min-width: $desktop) {
+    padding: 8rem 0 12rem 0;
+  }
+
+  &__text-box {
+    max-width: 360px;
+    margin: 0 auto 4rem auto;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column-reverse;
+    max-width: 510px;
+    margin: 0 auto;
+
+    @media only screen and (min-width: $desktop) {
+      flex-direction: row;
+      max-width: 100%;
+      margin: 0;
+    }
+  }
+
+  &__form {
+    width: 100%;
+
+    @media only screen and (min-width: $desktop) {
+      width: 510px;
+      margin-right: 17rem;
+    }
+  }
+
+  &__input, &__textarea {
+    width: 100%;
+    padding: 1.7rem 0 1.7rem 2rem;
+    border: 0;
+    font-family: inherit;
+    font-size: 1.5rem;
+    font-weight: 700;
+    transition: all .2s ease-in-out;
+
+    color: $color-white;
+    background-color: $color-turquoise;
+    opacity: .6;
+
+    &:focus {
+      border-left: 5px solid $color-blue-dark;
+      background-color: $color-turquoise;
+      opacity: 1;
+    }
+
+    &::placeholder {
+      font-family: inherit;
+      color: $color-white;
+      font-weight: 300;
+    }
+
+    &-wrapper {
+      &:not(:last-child) {
+        margin-bottom: 1.5rem;
+      }
+    }
+  }
+
+  &__textarea {
+    resize: none;
+    height: 250px;
+  }
+
+  &__subtitle {
+    font-family: inherit;
+    color: $color-black;
+    font-size: 1.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  &__details {
+    margin-bottom: 2rem;
+    @media only screen and (min-width: $desktop) {
+      margin-bottom: 0;
+    }
+
+
+    .paragraph:not(:last-child) {
+      margin-bottom: 1.2rem;
+    }
+  }
 }
