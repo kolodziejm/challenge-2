@@ -9,15 +9,15 @@
 html {
   font-size: 50%; // 8px
 
-  @media only screen and (min-width: 37.5em) { // 600px
+  @media only screen and (min-width: $tablet-sm) { // 600px
     font-size: 56%;
   } 
 
-  @media only screen and (min-width: 56.25em) { // 900px
+  @media only screen and (min-width: $tablet-lg) { // 900px
     font-size: 59%;
   }
 
-  @media only screen and (min-width: 75em) { // 1200px
+  @media only screen and (min-width: $desktop) { // 1200px
     font-size: 62.5%; // 10px
   }
 }

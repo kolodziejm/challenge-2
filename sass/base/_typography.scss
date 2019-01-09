@@ -29,11 +29,11 @@
   font-size: 5rem;
   font-weight: 700;
 
-  @media only screen and (min-width: 56.25em) { 
+  @media only screen and (min-width: $tablet-lg) { 
     font-size: 7rem;
   }
 
-  @media only screen and (min-width: 75em) { 
+  @media only screen and (min-width: $desktop) { 
     font-size: 9rem;
   }
 
@@ -44,7 +44,7 @@
   &--small {
     font-size: 3rem;
 
-    @media only screen and (min-width: 56.25em) { 
+    @media only screen and (min-width: $tablet-lg) { 
       font-size: 4rem;
     }
   }
