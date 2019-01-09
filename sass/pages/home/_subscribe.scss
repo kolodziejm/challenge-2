@@ -41,6 +41,11 @@
     padding: 1.9rem 0 1.9rem 1.5rem;
     width: 100%;
     border: 1px solid $color-black;
+    transition: all .3s ease-in-out;
+
+    &:focus {
+      border: 1px solid $color-green;
+    }
 
     @media only screen and (min-width: $tablet-lg) {
       width: 570px;

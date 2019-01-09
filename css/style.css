@@ -94,19 +94,28 @@ body {
   text-transform: uppercase;
   padding: 1.5rem 2.5rem;
   border: 0;
-  cursor: pointer; }
+  cursor: pointer;
+  transition: all .2s ease-out; }
   .btn--orange {
     color: #fff;
     background-color: #ff6033; }
+    .btn--orange:hover {
+      background-color: #cc2d00; }
   .btn--blue {
     color: #fff;
     background-color: #5585a2; }
+    .btn--blue:hover {
+      background-color: #324e5f; }
   .btn--green {
     color: #fff;
     background-color: #96b92c; }
+    .btn--green:hover {
+      background-color: #536718; }
   .btn--red {
     color: #fff;
     background-color: #f72b3b; }
+    .btn--red:hover {
+      background-color: #b50715; }
   .btn--big {
     padding: 1.5rem 4rem; }
   .btn--subscribe {
@@ -191,17 +200,12 @@ body {
     border-top: 1px solid #262626;
     list-style: none;
     width: 100%;
-    display: none;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    opacity: 0; }
+    display: none; }
     .nav__mobile-list--active {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: center;
-      opacity: 1; }
+      align-items: center; }
     @media only screen and (min-width: 75em) {
       .nav__mobile-list {
         display: none; } }
@@ -586,7 +590,10 @@ body {
     font-size: 1.5rem;
     padding: 1.9rem 0 1.9rem 1.5rem;
     width: 100%;
-    border: 1px solid #262626; }
+    border: 1px solid #262626;
+    transition: all .3s ease-in-out; }
+    .subscribe__input:focus {
+      border: 1px solid #96b92c; }
     @media only screen and (min-width: 56.25em) {
       .subscribe__input {
         width: 570px; }

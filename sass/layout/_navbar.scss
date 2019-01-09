@@ -94,17 +94,12 @@
     list-style: none;
     width: 100%;
     display: none;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
 
     &--active {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      opacity: 1;
     }
 
     @media only screen and (min-width: $desktop) {

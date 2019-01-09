@@ -9,25 +9,42 @@
   padding: 1.5rem 2.5rem;
   border: 0;
   cursor: pointer;
+  transition: all .2s ease-out;
 
   &--orange {
     color: $color-white;
     background-color: $color-orange;
+
+    &:hover {
+      background-color: darken($color-orange, $amount: 20%)
+    }
   }
 
   &--blue {
     color: $color-white;
     background-color: $color-blue-dark-2;
+
+    &:hover {
+      background-color: darken($color-blue-dark-2, $amount: 20%)
+    }
   }
 
   &--green {
     color: $color-white;
     background-color: $color-green;
+
+    &:hover {
+      background-color: darken($color-green, $amount: 20%)
+    }
   }
 
   &--red {
     color: $color-white;
     background-color: $color-orange-dark;
+
+    &:hover {
+      background-color: darken($color-orange-dark, $amount: 20%)
+    }
   }
 
   &--big {
