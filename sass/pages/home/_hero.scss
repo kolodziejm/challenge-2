@@ -1,0 +1,31 @@
+.hero {
+  background-image: url('../../assets/images/header.png');
+  background-repeat: no-repeat;
+  background-position: top;
+  @media only screen and (min-width: 80em) {
+    background-position: 0% 35%;
+    background-size: cover;
+  }
+  height: 100vh;
+  position: relative;
+
+  &__text-box {
+    max-width: 40rem;
+    position: absolute;
+    top: 35%;
+  }
+
+  &__title {
+    color: $color-black;
+    font-size: 6rem;
+    font-weight: 900;
+  }
+
+  .mouse {
+    display: block;
+    position: absolute;
+    bottom: 4.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

@@ -1,0 +1,58 @@
+.subscribe {
+  background-image: url('../../assets/images/subscribe.png');
+  @include imageBackground;
+  padding: 5rem 0 5rem 0;
+
+  @media only screen and (min-width: $desktop) {
+    padding: 12rem 0 16.3rem 0;
+    background-size: auto;
+  }
+
+  &__text-box {
+    max-width: 550px;
+    background-color: $color-light;
+    opacity: 0.9;
+    margin: 0 auto 3rem auto;
+
+    @media only screen and (min-width: $tablet-lg) {
+      margin-left: 0;
+      margin-right: 0;
+      background-color: transparent;
+      opacity: 1;
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+
+    @media only screen and (min-width: $tablet-lg) {
+      flex-direction: row;
+      align-items: center;
+      max-width: 800px;
+      margin: 0;
+    }
+  }
+
+  &__input {
+    font-size: 1.5rem;
+    padding: 1.9rem 0 1.9rem 1.5rem;
+    width: 100%;
+    border: 1px solid $color-black;
+
+    @media only screen and (min-width: $tablet-lg) {
+      width: 570px;
+
+      &-wrapper {
+        margin-right: 3rem;
+      }  
+    }
+
+    &::placeholder {
+      color: $color-grey-dark;
+      font-family: inherit;
+    }
+  }
+}
