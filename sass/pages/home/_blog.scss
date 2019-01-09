@@ -72,27 +72,27 @@
     }
 
     &--one {
-      background-image: linear-gradient(to top, #000, rgba(0,0,0,.1) 50%, rgba(0,0,0,0)), url('../../assets/images/blog 1 bg.png')
+      background-image: linear-gradient(to top, #000, rgba(0,0,0,.1) 50%, rgba(0,0,0,0)), url('../../../assets/images/blog\ 1\ bg.png')
     }
 
     &--one:hover {
-      background-image: linear-gradient(to top, #000, rgba(0,0,0,.1) 100%, rgba(0,0,0,0)), url('../../assets/images/blog 1 bg.png');
+      background-image: linear-gradient(to top, #000, rgba(0,0,0,.1) 100%, rgba(0,0,0,0)), url('../../../assets/images/blog\ 1\ bg.png');
     }
 
     &--two {
-      background-image: linear-gradient(to top, #000, rgba(0,0,0,.1) 50%, rgba(0,0,0,0)), url('../../assets/images/blog\ 2\ bg.png')
+      background-image: linear-gradient(to top, #000, rgba(0,0,0,.1) 50%, rgba(0,0,0,0)), url('../../../assets/images/blog\ 2\ bg.png')
     }
 
     &--two:hover {
-      background-image: linear-gradient(to top, #000, rgba(0,0,0,.1) 100%, rgba(0,0,0,0)), url('../../assets/images/blog\ 2\ bg.png')
+      background-image: linear-gradient(to top, #000, rgba(0,0,0,.1) 100%, rgba(0,0,0,0)), url('../../../assets/images/blog\ 2\ bg.png')
     }
 
     &--three {
-      background-image: linear-gradient(to top, #000, rgba(0,0,0,.1) 50%, rgba(0,0,0,0)), url('../../assets/images/blog\ 3\ bg.png')
+      background-image: linear-gradient(to top, #000, rgba(0,0,0,.1) 50%, rgba(0,0,0,0)), url('../../../assets/images/blog\ 3\ bg.png')
     }
 
     &--three:hover {
-      background-image: linear-gradient(to top, #000, rgba(0,0,0,.1) 100%, rgba(0,0,0,0)), url('../../assets/images/blog\ 3\ bg.png')
+      background-image: linear-gradient(to top, #000, rgba(0,0,0,.1) 100%, rgba(0,0,0,0)), url('../../../assets/images/blog\ 3\ bg.png')
     }
 
     &--one:hover, &--two:hover, &--three:hover {
