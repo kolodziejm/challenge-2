@@ -51,6 +51,7 @@
 
   &__item {
     transition: all .2s ease-out;
+    border-top: 3px transparent solid;
 
     &:not(:last-child) {
       margin-right: 3.75rem;
@@ -59,7 +60,6 @@
 
     &--active {
       border-top: 3px $color-orange solid;
-      margin-bottom: 3px;
     }
   }
 
